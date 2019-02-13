@@ -12,12 +12,12 @@ First you should install core package of OpenALPR.
 sudo apt-get update && sudo apt-get install -y openalpr openalpr-daemon openalpr-utils libopenalpr-dev tesseract-ocr
 ````
 ### Windows
-Install python ( 64-bit ).
-Donwload 64-bit SDK [here](https://deb.openalpr.com/windows-sdk/openalpr64-sdk-latest.zip) and extract that.
-Add extracted folder to your PATH.
+1. Install python ( 64-bit )
+2. Donwload 64-bit SDK [here](https://deb.openalpr.com/windows-sdk/openalpr64-sdk-latest.zip) and extract that
+3. Add extracted folder to your PATH
 
 ## Test
-you can test alpr by running this command :
+You can test alpr by running this command :  
 `alpr --version`
 
 ## Installation ( Laravel )
@@ -40,5 +40,5 @@ From URL
 Licenceplate::recognize("http://example.com/licence.jpg")
 ```
 ## Sample
-There is a sample laravel project. Check it and write your awesome project
+There is a sample laravel project. Check it and write your awesome project  
 [OpenLaravel-OpenALPR](https://github.com/hatamiarash7/Laravel-OpenALPR-Sample)
