@@ -6,6 +6,13 @@ use Illuminate\Support\ServiceProvider;
 
 class OpenALPRServiceProvider extends ServiceProvider
 {
+    protected $defer = false;
+
+    public function boot()
+    {
+        //
+    }
+
     public function register()
     {
         $this->app->bind('openalpr', 'Hatamiarash7\OpenALPR\OpenALPR');
