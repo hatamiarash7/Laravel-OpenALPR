@@ -1,0 +1,44 @@
+
+# Laravel-OpenALPR
+
+It's an OpenALPR package for Laravel. You can easily use this in your project.
+
+## Installation
+OpenALPR is a cross-platform project that you can run it on Windows, Linux or MacOS.
+First you should install core package of OpenALPR.
+
+### Linux
+````
+sudo apt-get update && sudo apt-get install -y openalpr openalpr-daemon openalpr-utils libopenalpr-dev tesseract-ocr
+````
+### Windows
+Install python ( 64-bit ).
+Donwload 64-bit SDK [here](https://deb.openalpr.com/windows-sdk/openalpr64-sdk-latest.zip) and extract that.
+Add extracted folder to your PATH.
+
+## Test
+you can test alpr by running this command :
+`alpr --version`
+
+## Installation ( Laravel )
+Include package into your project using composer
+
+`composer require hatamiarash7/openalpr`
+
+Publish the package config file
+```
+php artisan vendor:publish --provider="Bkremenovic\Licenceplate\LicenceplateServiceProvider"
+```
+
+## Usage
+Local
+```
+Licenceplate::recognize("licence.jpg")
+```
+From URL
+```
+Licenceplate::recognize("http://example.com/licence.jpg")
+```
+## Sample
+There is a sample laravel project. Check it and write your awesome project
+[OpenLaravel-OpenALPR](https://github.com/hatamiarash7/Laravel-OpenALPR-Sample)
