@@ -33,11 +33,11 @@ php artisan vendor:publish --provider="Hatamiarash7\OpenALPR\OpenALPRServiceProv
 ## Usage
 Local
 ```
-Licenceplate::recognize("licence.jpg")
+OpenALPR::recognize("licence.jpg")
 ```
 From URL
 ```
-Licenceplate::recognize("http://example.com/licence.jpg")
+OpenALPR::recognize("http://example.com/licence.jpg")
 ```
 ## Sample
 There is a sample laravel project. Check it and write your awesome project  
