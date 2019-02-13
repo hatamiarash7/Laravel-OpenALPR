@@ -1,0 +1,33 @@
+{
+    "name": "hatamiarash7/openalpr",
+    "description": "OpenALPR Library for Laravel",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "hatamiarash7",
+            "email": "hatamiarash7@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.0",
+        "intervention/image": "dev-master|~2,>=2.2.0",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
+        "illuminate/session": "5.1.*|5.2.*|5.3.*|5.4.*",
+        "illuminate/events": "5.1.*|5.2.*|5.3.*|5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hatamiarash7\\OpenALPR\\": "src/",
+            "Intervention\\Image\\": "src/Intervention/Image"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hatamiarash7\\OpenALPR\\OpenALPRServiceProvider"
+            ]
+        }
+    }
+}
