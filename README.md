@@ -27,7 +27,7 @@ Include package into your project using composer
 
 Publish the package config file
 ```
-php artisan vendor:publish --provider="Bkremenovic\Licenceplate\LicenceplateServiceProvider"
+php artisan vendor:publish --provider="Hatamiarash7\OpenALPR\OpenALPRServiceProvider"
 ```
 
 ## Usage
